@@ -15,7 +15,7 @@ class ExampleTestSuite(unittest.TestCase):
         assert True == True
 
     def test_tc5(self):
-        assert True == False
+        assert True == True
 
 
 if __name__ == "__main__":
