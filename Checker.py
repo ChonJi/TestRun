@@ -3,14 +3,12 @@ from Parser import Parser
 
 class Checker:
 
+    artifact_id = 144070184
+
     def __init__(self):
-        parser = Parser()
+        parser = Parser(self.artifact_id)
         for element in parser.check_status():
             print('New test failed: ' + element)
-
-    # global ARTIFACT_ID
-    # ARTIFACT_ID = 144070184
-
 
 Checker()
 

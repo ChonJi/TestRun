@@ -3,8 +3,8 @@ import xml.etree.ElementTree as element_tree
 
 class Parser:
 
-    def __init__(self):
-        ReportProvider(144070184)
+    def __init__(self, artifact_id):
+        ReportProvider(artifact_id)
 
     def get_actual_failures(self):
 
@@ -32,14 +32,3 @@ class Parser:
                 differences_list.append(element)
 
         return differences_list
-
-# parser = Parser()
-# for failure in parser.get_actual_failures():
-#     print(failure)
-#
-# print('***************************')
-#
-# for accepted_failure in parser.get_accepted_failures():
-#     print(accepted_failure)
-#
-# print('*****************************')
