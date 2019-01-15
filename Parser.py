@@ -1,13 +1,14 @@
-import Checker
 from ReportProvider import ReportProvider
 import xml.etree.ElementTree as element_tree
 
 class Parser:
 
+    def __init__(self):
+        ReportProvider(144070184)
+
     def get_actual_failures(self):
 
         test_cases_list = []
-        ReportProvider(Checker.ARTIFACT_ID)
         tree = element_tree.parse('actual_report.xml')
         for parent in tree.findall('.//failure/..'):
             test_cases_list.append(parent.attrib['name'])
