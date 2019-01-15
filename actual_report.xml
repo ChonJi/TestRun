@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite errors="0" failures="2" name="ExampleTestSuite-20190110142251" skipped="0" tests="5" time="0.001" timestamp="2019-01-10T14:22:51">
+		<testcase classname="ExampleTestSuite" name="test_tc1" time="0.000" timestamp="2019-01-10T14:22:51"/>
+		<testcase classname="ExampleTestSuite" name="test_tc4" time="0.000" timestamp="2019-01-10T14:22:51"/>
+		<testcase classname="ExampleTestSuite" name="test_tc5" time="0.000" timestamp="2019-01-10T14:22:51"/>
+		<testcase classname="ExampleTestSuite" name="test_tc2" time="0.000" timestamp="2019-01-10T14:22:51">
+			<failure message="" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "ExampleTestSuite.py", line 11, in test_tc2
+    assert True == False
+AssertionError
+]]>			</failure>
+		</testcase>
+		<testcase classname="ExampleTestSuite" name="test_tc3" time="0.000" timestamp="2019-01-10T14:22:51">
+			<failure message="" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "ExampleTestSuite.py", line 14, in test_tc3
+    assert True == False
+AssertionError
+]]>			</failure>
+		</testcase>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testsuite>
+</testsuites>
