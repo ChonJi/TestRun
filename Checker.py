@@ -7,10 +7,11 @@ class Checker:
 
     def __init__(self):
         parser = Parser(self.artifact_id)
-        for element in parser.check_status():
+        for element in parser.compare_failures():
             print('New test failed: ' + element)
 
-Checker()
+if __name__ == "__main__":
+    Checker()
 
 
 

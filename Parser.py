@@ -23,12 +23,10 @@ class Parser:
             accepted_failures_list.append(failure.text)
         return accepted_failures_list
 
-    def check_status(self):
+    def compare_failures(self):
 
         differences_list = []
-
         for element in self.get_actual_failures():
             if element not in self.get_accepted_failures():
                 differences_list.append(element)
-
         return differences_list
